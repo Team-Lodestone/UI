@@ -1,5 +1,5 @@
 {
-	"name": "lodestone-ui",
+	"name": "@team-lodestone/lodestone-ui",
 	"version": "1.0.0",
 	"scripts": {
 		"dev": "vite dev",
@@ -29,6 +29,7 @@
 			"svelte": "./dist/index.js"
 		}
 	},
+	"license": "LGPL-2.1-or-later",
 	"peerDependencies": {
 		"svelte": "^5.0.0"
 	},
