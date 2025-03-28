@@ -1,2 +1,2 @@
 # UI
-Library of UI components used by Lodestone
+Library of UI components used by Lodestone.
