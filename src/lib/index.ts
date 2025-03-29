@@ -24,3 +24,4 @@ export { default as Footer } from './Components/Footer.svelte';
 export { default as InfoCard } from './Components/InfoCard.svelte';
 export { default as ScreenAwareTopbarButton } from './Components/ScreenAwareTopbarButton.svelte';
 export { default as Scrollable } from './Components/Scrollable.svelte';
+export { default as DropDownBox } from './Components/DropDownBox.svelte';
