@@ -22,7 +22,7 @@
     export let onClick: () => void = () => {};
 </script>
 
-<a class:disabled={disabled} draggable="false" aria-disabled={disabled} on:click={(e) => {if (disabled) e.preventDefault(); else onClick();}} {...$$props}>
+<a class:disabled={disabled} draggable="false" role="button" aria-disabled={disabled} on:click={(e) => {if (disabled) e.preventDefault(); else onClick();}} on:keydown={(e) => {if (e.key === 'Enter' || e.key === ' ') {if (disabled) e.preventDefault(); else onClick();}}} tabindex="0" {...$$props}>
     {#if usesIcon}
         {#if !$isMobile}
             <slot></slot>

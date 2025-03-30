@@ -3,11 +3,13 @@
     export let title: string
     /** Icon class of the card */
     export let icon: string;
+    /** Alt text of the icon */
+    export let alt: string = "";
 </script>
 
 <div class="InfoCard">
     {#if icon !== ""}
-        <i class="icon fa {icon}"></i>
+        <i class="icon fa {icon}" title={alt} aria-label={alt}></i>
     {/if}
     <h2 class="title">{title}</h2>
     <p class="desc"><slot></slot></p>

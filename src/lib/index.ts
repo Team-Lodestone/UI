@@ -25,3 +25,4 @@ export { default as InfoCard } from './Components/InfoCard.svelte';
 export { default as ScreenAwareTopbarButton } from './Components/ScreenAwareTopbarButton.svelte';
 export { default as Scrollable } from './Components/Scrollable.svelte';
 export { default as DropDownBox } from './Components/DropDownBox.svelte';
+export { default as Tooltip } from './Components/Tooltip.svelte';
