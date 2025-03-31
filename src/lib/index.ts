@@ -23,7 +23,11 @@ import './CSS/fa/css/solid.css';
 import { addMessages } from 'svelte-i18n';
 
 // add languages, we don't init because that's left to the project using this lib to do.
-addMessages('en-US', (await import('./L10N/en-us.json')) as never);
+async function initL10N() {
+	addMessages('en-US', (await import('./L10N/en-us.json')) as never);
+}
+
+initL10N();
 
 export { default as Topbar } from './Components/Topbar.svelte';
 export { default as Dialog } from './Components/Dialog.svelte';
