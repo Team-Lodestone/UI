@@ -1,0 +1,61 @@
+{
+	"LodestoneUI": {
+		"Dialog": {
+			"closeButton": {
+				"title": "Закрыть",
+				"ariaLabel": "Закрыть Диалог"
+			}
+		},
+		"FSPickerButton": {
+			"ariaLabel": {
+				"chosen": "{type} был выбран",
+				"notChosen": "Не выбран {type}"
+			},
+			"title": "Выберете {type}",
+			"types": {
+				"folder": "Папку",
+				"file": "Файл"
+			}
+		},
+		"Scrollable": {
+			"arrows": {
+				"left": {
+					"ariaLabel": "Прокрутить влево",
+					"title": "Прокрутить влево"
+				},
+				"right": {
+					"ariaLabel": "Прокрутить вправо",
+					"title": "Прокрутить вправо"
+				}
+			}
+		},
+		"SlideUp": {
+			"title": "Нажмите/коснитесь чтобы расширить {action}",
+			"ariaLabel": "{title}: Нажмите/коснитесь чтобы расширить {action}",
+			"actions": {
+				"open": "открыть",
+				"close": "закрыть"
+			}
+		},
+		"Option": {
+			"description": "Отсутствует описание."
+		},
+		"Topbar": {
+			"expander": {
+				"ariaLabel": "{action} меню",
+				"title": "{action} меню"
+			},
+			"homeButton": {
+				"ariaLabel": "Кнопка домой",
+				"logo": {
+					"alt": "Логотип"
+				},
+				"title": "Перейти домой"
+			},
+			"actions": {
+				"close": "Закрыть",
+				"open": "Открыть"
+			}
+		}
+	}
+}
