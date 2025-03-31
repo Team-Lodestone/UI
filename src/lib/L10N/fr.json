@@ -1,0 +1,61 @@
+{
+  "LodestoneUI": {
+    "Dialog": {
+      "closeButton": {
+        "ariaLabel": "Fermer le dialogue",
+        "title": "Fermer"
+      }
+    },
+    "FSPickerButton": {
+      "ariaLabel": {
+        "chosen": "Un {type} a été choisis",
+        "notChosen": "Aucun {type} n'a été choisis"
+      },
+      "title": "Choissisez un {type}",
+      "types": {
+        "file": "Fichier",
+        "folder": "Dossier"
+      }
+    },
+    "Option": {
+      "description": "Aucune description fournie."
+    },
+    "Scrollable": {
+      "arrows": {
+        "left": {
+          "ariaLabel": "Défiler à gauche",
+          "title": "Défiler à gauche"
+        },
+        "right": {
+          "ariaLabel": "Défiler à droite",
+          "title": "Défiler à droite"
+        }
+      }
+    },
+    "SlideUp": {
+      "actions": {
+        "close": "fermer",
+        "open": "ouvrir"
+      },
+      "ariaLabel": "{title}: Cliquez/Tapez pour {action} étendre",
+      "title": "Cliquez/Tapez pour {action} étendre"
+    },
+    "Topbar": {
+      "actions": {
+        "close": "Fermer",
+        "open": "Ouvrir"
+      },
+      "expander": {
+        "ariaLabel": "menu {action}",
+        "title": "menu {action}"
+      },
+      "homeButton": {
+        "ariaLabel": "Bouton d'Accueil",
+        "logo": {
+          "alt": "Logo"
+        },
+        "title": "Retourner à l'accueil"
+      }
+    }
+  }
+}
