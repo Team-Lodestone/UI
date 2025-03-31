@@ -1,0 +1,61 @@
+{
+	"LodestoneUI": {
+		"Dialog": {
+			"closeButton": {
+				"title": "Close",
+				"ariaLabel": "Close Dialog"
+			}
+		},
+		"FSPickerButton": {
+			"ariaLabel": {
+				"chosen": "A {type} has been chosen",
+				"notChosen": "No {type} has been chosen"
+			},
+			"title": "Choose a {type}",
+			"types": {
+				"folder": "Folder",
+				"file": "File"
+			}
+		},
+		"Scrollable": {
+			"arrows": {
+				"left": {
+					"ariaLabel": "Scroll left",
+					"title": "Scroll left"
+				},
+				"right": {
+					"ariaLabel": "Scroll right",
+					"title": "Scroll right"
+				}
+			}
+		},
+		"SlideUp": {
+			"title": "Click/Tap to {action} expander",
+			"ariaLabel": "{title}: Click/Tap to {action} expander",
+			"actions": {
+				"open": "open",
+				"close": "close"
+			}
+		},
+		"Option": {
+			"description": "No description provided."
+		},
+		"Topbar": {
+			"expander": {
+				"ariaLabel": "{action} menu",
+				"title": "{action} menu"
+			},
+			"homeButton": {
+				"ariaLabel": "Home button",
+				"logo": {
+					"alt": "Logo"
+				},
+				"title": "Go home"
+			},
+			"actions": {
+				"close": "Close",
+				"open": "Open"
+			}
+		}
+	}
+}

@@ -2,6 +2,7 @@
 	import { cubicInOut } from 'svelte/easing';
 	import { fade } from 'svelte/transition';
 
+	/** Tooltip text */
 	export let text: string;
 
 	let tooltip: HTMLDivElement;
@@ -43,37 +44,53 @@
 	}
 </script>
 
-<div aria-describedby="tooltipText" bind:this={tooltip} class="Tooltip" on:focusin={show} on:focusout={hide}
-		 on:mouseenter={show} on:mouseleave={hide}>
+<div
+	aria-describedby="tooltipText"
+	bind:this={tooltip}
+	class="Tooltip"
+	on:focusin={show}
+	on:focusout={hide}
+	on:mouseenter={show}
+	on:mouseleave={hide}
+>
 	{#if visible}
-		<p class="tooltipText" id="tooltipText" transition:fade={{ duration: 200, easing: cubicInOut }}
-			 bind:this={tooltipText} on:mouseenter={hoverTooltip} aria-live="polite" on:mouseleave={stopHoverTooltip}
-			 role="tooltip">{text}</p>
+		<p
+			class="tooltipText"
+			id="tooltipText"
+			transition:fade={{ duration: 200, easing: cubicInOut }}
+			bind:this={tooltipText}
+			on:mouseenter={hoverTooltip}
+			aria-live="polite"
+			on:mouseleave={stopHoverTooltip}
+			role="tooltip"
+		>
+			{text}
+		</p>
 	{/if}
 	<slot />
 </div>
 
 <style>
-    .Tooltip {
-        display: inline-flex;
-        flex-direction: column;
-        position: relative;
-    }
+	.Tooltip {
+		display: inline-flex;
+		flex-direction: column;
+		position: relative;
+	}
 
-    .tooltipText {
-        width: 210px;
-        background-color: var(--bg-darker);
-        border: 2px solid var(--bg-border-darker);
-        text-align: center;
-        padding: 5px 0;
-        border-radius: 5px;
+	.tooltipText {
+		width: 210px;
+		background-color: var(--bg-darker);
+		border: 2px solid var(--bg-border-darker);
+		text-align: center;
+		padding: 5px 0;
+		border-radius: 5px;
 
-        position: absolute;
-        z-index: 1;
+		position: absolute;
+		z-index: 1;
 
-        bottom: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-bottom: 10px;
-    }
+		bottom: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		margin-bottom: 10px;
+	}
 </style>

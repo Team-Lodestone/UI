@@ -1,0 +1,91 @@
+/* region Colors */
+
+/* region Light Mode/Default */
+:root {
+	/* region Accent */
+	--accent-bright: rgb(167, 133, 255);
+	--accent: rgb(167, 133, 255);
+	--accent-theme: rgb(130, 86, 237);
+	--accent-saturated: rgb(139, 92, 253);
+	--accent-more-saturated: rgb(107, 44, 253);
+	--accent-border: rgba(167, 133, 255, 0.5);
+	--accent-saturated-border: rgba(139, 92, 253, 0.5);
+	--accent-more-saturated-border: rgba(107, 44, 253, 0.5);
+	/* endregion */
+
+	/* region Text */
+	--text: rgb(60, 60, 67);
+	--text-unfocused: rgb(90, 90, 97);
+	--disabled-text: rgb(25, 25, 35);
+	/* endregion */
+
+	/* region Background */
+	--bg: rgb(255, 255, 255);
+	--bg-alt: rgb(246, 246, 247);
+	--bg-alt-2: rgb(230, 230, 230);
+	--bg-darker: rgb(240, 240, 240);
+	--bg-border-darker: rgb(220, 220, 220);
+	--bg-border: rgb(200, 200, 200);
+	--bg-disabled: rgb(220, 220, 220);
+	/* endregion */
+
+	/* region Role Colors */
+	--website-dev-color: #58a2ec;
+	--designer-color: #5dbc76; /* harder to read with light mode, orig is 6edf8c */
+	--translator-color: #fa9191;
+	/* endregion */
+
+	/* region Other */
+	--theme-inverse: rgb(0, 0, 0);
+	/* endregion */
+}
+/* endregion */
+
+/* region Dark Mode */
+@media (prefers-color-scheme: dark) {
+	:root {
+		/* region Accent */
+		--accent-bright: rgb(167, 133, 255);
+		--accent-theme: rgb(167, 133, 255);
+		--accent: rgb(95, 73, 158);
+		--accent-saturated: rgb(70, 40, 140);
+		--accent-more-saturated: rgb(46, 20, 108);
+		/* endregion */
+
+		/* region Text */
+		--text: rgba(235, 235, 245);
+		--disabled-text: rgb(145, 145, 165);
+		--text-unfocused: rgb(148, 148, 154);
+		/* endregion */
+
+		/* region Background */
+		--bg: rgb(18, 18, 18);
+		--bg-alt: rgb(39, 39, 48);
+		--bg-alt-2: rgb(25, 25, 30);
+		--bg-darker: rgb(15, 15, 14);
+		--bg-border-darker: rgb(13, 13, 13);
+		--bg-border: rgb(26, 26, 37);
+		--bg-disabled: rgb(31, 31, 37);
+		/* endregion */
+
+		/* region Role Colors */
+		--website-dev-color: #447db6;
+		--designer-color: #50a366;
+		--translator-color: #c17070;
+		/* endregion */
+
+		/* region Other */
+		--theme-inverse: rgb(255, 255, 255);
+		/* endregion */
+	}
+}
+/* endregion */
+
+/* endregion */
+
+/*region Screen Size Reactivity */
+.mobileButtons .button,
+.mobileButtons a {
+	width: 90% !important;
+}
+/*endregion*/
