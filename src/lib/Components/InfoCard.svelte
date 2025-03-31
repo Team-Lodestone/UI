@@ -9,7 +9,7 @@
 
 <div class="InfoCard">
 	{#if icon !== ''}
-		<i class="icon fa {icon}" title={alt} aria-label={alt}></i>
+		<i class="icon {icon}" title={alt} aria-label={alt}></i>
 	{/if}
 	<h2 class="title">{title}</h2>
 	<p class="desc"><slot></slot></p>
