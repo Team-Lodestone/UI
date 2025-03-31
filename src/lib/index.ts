@@ -26,6 +26,7 @@ import { addMessages } from 'svelte-i18n';
 async function initL10N() {
 	addMessages('en-US', (await import('./L10N/en-us.json')) as never);
 	addMessages('fr', await import('./L10N/fr.json') as never);
+	addMessages('ru', (await import('./L10N/ru.json')) as never);
 }
 
 initL10N();
