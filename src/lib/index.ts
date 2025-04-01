@@ -17,19 +17,23 @@
  *  USA
  */
 
-import './CSS/app.css';
-import './CSS/fa/css/fontawesome.css';
-import './CSS/fa/css/solid.css';
-import { addMessages } from 'svelte-i18n';
+import { addMessages, init } from 'svelte-i18n';
 
-// add languages, we don't init because that's left to the project using this lib to do.
-async function initL10N() {
+/** Call this when languages are initialized in the dependent.
+ *
+ * Unfortunately I cannot find an easy way around forcing a second init.
+ *
+ * @param options passed to init which takes ConfigureOptionsInit, but it's not exported, so I have to use type `any`.
+ */
+export async function initLUILanguages(options: never) {
+	// add languages
 	addMessages('en-US', (await import('./L10N/en-us.json')) as never);
-	addMessages('fr', await import('./L10N/fr.json') as never);
+	addMessages('fr', (await import('./L10N/fr.json')) as never);
 	addMessages('ru', (await import('./L10N/ru.json')) as never);
-}
 
-initL10N();
+	// wish I didn't have to init here... I wanted to leave it up to the dependent to initialize svelte-i18n
+	await init(options);
+}
 
 export { default as Topbar } from './Components/Topbar.svelte';
 export { default as Dialog } from './Components/Dialog.svelte';
