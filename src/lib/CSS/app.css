@@ -29,12 +29,6 @@
 	--bg-disabled: rgb(220, 220, 220);
 	/* endregion */
 
-	/* region Role Colors */
-	--website-dev-color: #58a2ec;
-	--designer-color: #5dbc76; /* harder to read with light mode, orig is 6edf8c */
-	--translator-color: #fa9191;
-	/* endregion */
-
 	/* region Other */
 	--theme-inverse: rgb(0, 0, 0);
 	/* endregion */
@@ -66,12 +60,6 @@
 		--bg-border-darker: rgb(13, 13, 13);
 		--bg-border: rgb(26, 26, 37);
 		--bg-disabled: rgb(31, 31, 37);
-		/* endregion */
-
-		/* region Role Colors */
-		--website-dev-color: #447db6;
-		--designer-color: #50a366;
-		--translator-color: #c17070;
 		/* endregion */
 
 		/* region Other */

@@ -21,7 +21,7 @@
 		border: 2px solid var(--bg-border);
 		background-color: var(--bg-alt);
 		width: 480px;
-		height: 280px;
+		height: 320px;
 		padding: 10px;
 		transition:
 			border 200ms,
