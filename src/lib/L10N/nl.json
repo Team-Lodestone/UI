@@ -1,0 +1,61 @@
+{
+	"LodestoneUI": {
+		"Dialog": {
+			"closeButton": {
+				"title": "Sluit",
+				"ariaLabel": "Sluit Dialoog"
+			}
+		},
+		"FSPickerButton": {
+			"ariaLabel": {
+				"chosen": "Een {type} is gekozen",
+				"notChosen": "Geen {type} is gekozen"
+			},
+			"title": "Kies een {type}",
+			"types": {
+				"folder": "Folder",
+				"file": "Bestand"
+			}
+		},
+		"Scrollable": {
+			"arrows": {
+				"left": {
+					"ariaLabel": "Scroll naar links",
+					"title": "Scroll naar links"
+				},
+				"right": {
+					"ariaLabel": "Scroll naar rechts",
+					"title": "Scroll naar rechts"
+				}
+			}
+		},
+		"SlideUp": {
+			"title": "Klik/Tik om de expander {action} ",
+			"ariaLabel": "{title}: Klik/Tik om de expander {action}",
+			"actions": {
+				"open": "te opnen",
+				"close": "te sluiten"
+			}
+		},
+		"Option": {
+			"description": "Geen beschrijving gegeven."
+		},
+		"Topbar": {
+			"expander": {
+				"ariaLabel": "{action} menu",
+				"title": "{action} menu"
+			},
+			"homeButton": {
+				"ariaLabel": "Home knop",
+				"logo": {
+					"alt": "Logo"
+				},
+				"title": "Ga naar home"
+			},
+			"actions": {
+				"close": "Sluit",
+				"open": "Open"
+			}
+		}
+	}
+}
