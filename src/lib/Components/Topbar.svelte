@@ -2,7 +2,6 @@
 	import { _ as t } from 'svelte-i18n';
 	import { navigate } from 'svelte5-router';
 	import { onMount } from 'svelte';
-	import { listen as addListener } from 'svelte5-router';
 	import { slide } from 'svelte/transition';
 	import { type Writable } from 'svelte/store';
 
@@ -11,6 +10,9 @@
 
 	/** What logo should be shown in the topbar */
 	export let logo: string;
+
+	/** Whether the background should be transparent */
+	export let transparent: boolean;
 
 	/** The store that will store whether to use Mobile UI */
 	export let isMobile: Writable<boolean>;
@@ -29,14 +31,7 @@
 		isExpanded = !isExpanded;
 	};
 
-	/** Current path, used for theming the topbar */
-	let path = window.location.pathname;
-
 	onMount(async (): Promise<void> => {
-		addListener(({ location }) => {
-			path = location.pathname;
-		});
-
 		window.addEventListener('resize', checkMobile);
 
 		return (() => {
@@ -45,7 +40,7 @@
 	});
 </script>
 
-<div class:topbar={true} class:topbarHome={path === '/' && !isExpanded} {...$$props}>
+<div class:topbar={true} class:topbarTransparent={transparent} {...$$props}>
 	<div class="topbarItems">
 		{#if logo}
 			<button
@@ -152,7 +147,7 @@
 		flex-direction: row;
 	}
 
-	.topbarHome {
+	.topbarTransparent {
 		background-color: transparent !important;
 	}
 
