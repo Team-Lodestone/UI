@@ -11,6 +11,9 @@
 	/** What logo should be shown in the topbar */
 	export let logo: string;
 
+	/** Where the Home Button should take the user */
+	export let homeUrl: string = '/';
+
 	/** Whether the background should be transparent */
 	export let transparent: boolean;
 
@@ -48,7 +51,7 @@
 				title={$t('LodestoneUI.Topbar.homeButton.title')}
 				aria-label={$t('LodestoneUI.Topbar.homeButton.ariaLabel')}
 				on:click={() => {
-					navigate('/');
+					navigate(homeUrl);
 				}}
 				><img
 					class="logo-small"
