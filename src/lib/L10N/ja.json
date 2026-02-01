@@ -1,0 +1,61 @@
+{
+  "LodestoneUI": {
+    "Dialog": {
+      "closeButton": {
+        "title": "閉じる",
+        "ariaLabel": "ダイアログを閉じる"
+      }
+    },
+    "FSPickerButton": {
+      "ariaLabel": {
+        "chosen": "{type} が選択されています",
+        "notChosen": "{type} は選択されていません"
+      },
+      "title": "{type} を選択",
+      "types": {
+        "folder": "フォルダー",
+        "file": "ファイル"
+      }
+    },
+    "Scrollable": {
+      "arrows": {
+        "left": {
+          "ariaLabel": "左にスクロール",
+          "title": "左にスクロール"
+        },
+        "right": {
+          "ariaLabel": "右にスクロール",
+          "title": "右にスクロール"
+        }
+      }
+    },
+    "SlideUp": {
+      "title": "クリック／タップして展開を{action}",
+      "ariaLabel": "{title}: クリック／タップして展開を{action}",
+      "actions": {
+        "open": "開く",
+        "close": "閉じる"
+      }
+    },
+    "Option": {
+      "description": "説明はありません。"
+    },
+    "Topbar": {
+      "expander": {
+        "ariaLabel": "メニューを{action}",
+        "title": "メニューを{action}"
+      },
+      "homeButton": {
+        "ariaLabel": "ホームボタン",
+        "logo": {
+          "alt": "ロゴ"
+        },
+        "title": "ホームに戻る"
+      },
+      "actions": {
+        "close": "閉じる",
+        "open": "開く"
+      }
+    }
+  }
+}
