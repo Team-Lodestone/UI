@@ -31,6 +31,7 @@ export async function initLUILanguages(options: never) {
 	addMessages('fr', (await import('./L10N/fr.json')) as never);
 	addMessages('ru', (await import('./L10N/ru.json')) as never);
 	addMessages('nl', (await import('./L10N/nl.json')) as never);
+	addMessages('pl', (await import('./L10N/pl.json')) as never);
 
 	// wish I didn't have to init here... I wanted to leave it up to the dependent to initialize svelte-i18n
 	await init(options);

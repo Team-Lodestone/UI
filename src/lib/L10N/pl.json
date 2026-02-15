@@ -1,0 +1,61 @@
+{
+	"LodestoneUI": {
+		"Dialog": {
+			"closeButton": {
+				"title": "Zamknij",
+				"ariaLabel": "Zamknij okno"
+			}
+		},
+		"FSPickerButton": {
+			"ariaLabel": {
+				"chosen": "{type} został wybrany",
+				"notChosen": "Żaden {type} nie został wybrany"
+			},
+			"title": "Wybierz {type}",
+			"types": {
+				"folder": "Folder",
+				"file": "Plik"
+			}
+		},
+		"Scrollable": {
+			"arrows": {
+				"left": {
+					"ariaLabel": "Przewiń w lewo",
+					"title": "Przewiń w lewo"
+				},
+				"right": {
+					"ariaLabel": "Przewiń w prawo",
+					"title": "Przewiń w prawo"
+				}
+			}
+		},
+		"SlideUp": {
+			"title": "Kliknij/dotknij by {action} menu rozwijane",
+			"ariaLabel": "{title}: Kliknij/dotknij by {action} menu rozwijane",
+			"actions": {
+				"open": "otworzyć",
+				"close": "zamknąć"
+			}
+		},
+		"Option": {
+			"description": "Nie podano opisu."
+		},
+		"Topbar": {
+			"expander": {
+				"ariaLabel": "{action} menu",
+				"title": "{action} menu"
+			},
+			"homeButton": {
+				"ariaLabel": "Przycisk ekranu startowego",
+				"logo": {
+					"alt": "Logo"
+				},
+				"title": "Idź do ekranu startowego"
+			},
+			"actions": {
+				"close": "Zamknij",
+				"open": "Otwórz"
+			}
+		}
+	}
+}
